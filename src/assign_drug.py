@@ -12,6 +12,12 @@ def assign_drug(filename):
     else:
         return "tylenol"
 
+import sys
+
+filename = sys.argv[1]
+print(assign_drug(filename))
+
+
 assert assign_drug('inflammation_1.dat') == 'tylenol'
 assert assign_drug('inflammtion_4.dat') == 'placebo'
 assert assign_drug('inflammtion_3.dat') == 'tylenol'
